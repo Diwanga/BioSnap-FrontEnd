@@ -14,7 +14,7 @@ function App() {
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.has('code') || urlParams.has('state')) {
         window.history.replaceState({}, document.title, window.location.pathname);
-      }
+      } 
     }
   }, [auth.isAuthenticated]);
 
@@ -70,7 +70,7 @@ function App() {
     <div className="login-screen">
       <div className="login-card">
         <div className="login-icon">🌿</div>
-        <h1 className="login-title">BioSnap</h1>
+        <h1 className="login-title">BioSnap1</h1>
         <p className="login-subtitle">AI-Powered Species Recognition</p>
         <button 
           onClick={() => auth.signinRedirect()}
